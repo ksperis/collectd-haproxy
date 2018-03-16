@@ -350,7 +350,7 @@ def _format_dimensions(dimensions):
     """
 
     dim_pairs = ["%s=%s" % (k, v) for k, v in dimensions.iteritems()]
-    "%s_%s" % (dimensions['type'], dimensions['proxy_name'])
+    return "%s_%s" % (dimensions['type'], dimensions['proxy_name'])
 
 
 def _get_proxy_type(type_id):
